@@ -24,3 +24,13 @@ gridItem.forEach(gridItem => {
 function changeClass (){
   this.classList.add('active');
 };
+
+const resetBtn = document.querySelector('button');
+
+resetBtn.addEventListener("click", resetClass);
+
+function resetClass() {
+  console.log(gridItem);
+  gridItem.forEach(gridItem => {
+    gridItem.classList.remove('active');
+})};
